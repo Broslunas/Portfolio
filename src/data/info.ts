@@ -46,39 +46,6 @@ export const info = {
     skills: ["JavaScript", "React", "Node.js", "MongoDB", "Prank Mastery"], // not used yet
   },
 
-  projects: [
-    {
-      title: "Bart's Prank Portfolio",
-      date: "2024",
-      description:
-        "An interactive portfolio website showcasing my mischievous coding projects.",
-      link: "https://github.com/bartsimpsonfake/prank-portfolio",
-      tech: ["React", "Node.js", "MongoDB", "Sarcasm.js"],
-      img_alt: "Bart's Portfolio",
-      img_path: "/simpsons.png",
-    },
-    {
-      title: "Skateboard Shop",
-      date: "2023",
-      description:
-        "An e-commerce site selling skateboards and prank supplies. No bullies allowed!",
-      link: "https://github.com/bartsimpsonfake/skate-shop",
-      tech: ["React", "Node.js", "MongoDB", "Skateboard.js"],
-      img_alt: "Skateboard Shop",
-      img_path: "skateboard.png",
-    },
-    {
-      title: "Comic Book Club",
-      date: "2022",
-      description:
-        "A platform for comic book enthusiasts to discuss and share their collections.",
-      link: "https://github.com/bartsimpsonfake/comic-club",
-      tech: ["React", "Node.js", "MongoDB", "Comic.js"],
-      img_alt: "Comic Book Club",
-      img_path: "comics.png",
-    },
-  ],
-
   contact: {
     email: "bart@thesimpsons.com",
     linkedin: "https://www.linkedin.com/in/bartsimpsonfake",
