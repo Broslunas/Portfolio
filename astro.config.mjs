@@ -11,6 +11,6 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [rehypeAccessibleEmojis],
   },
-  site: 'https://astro-portfolio-template.pages.dev',
+  site: 'https://broslunas.com',
   integrations: [tailwind(), react(), robotsTxt(), sitemap()]
 });
