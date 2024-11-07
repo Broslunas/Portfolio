@@ -8,20 +8,12 @@ export default function Nav({ posts }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const navLinks = [
-    { name: "About", href: "/#about" },
-    { name: "Projects", href: "/#projects" },
-    { name: "Blog", href: "/#blog" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Sobre Mi", href: "/#about" },
+    { name: "Proyectos", href: "/proyectos" },
+    { name: "Blog", href: "https://blog.broslunas.com" },
+    { name: "Contacto", href: "/contacto" },
   ];
 
-  const extractInitials = (name) => {
-    const names = name.split(" ");
-    let initials = "";
-    names.forEach((name) => {
-      initials += name.charAt(0);
-    });
-    return initials;
-  };
 
   return (
     <>
@@ -29,7 +21,7 @@ export default function Nav({ posts }) {
         <div className="w-full px-6 py-2 flex justify-between items-center">
           <a className="font-bold text-2xl lg:text-4xl" href="/#">
             <span className="text-secondary dark:text-dk-secondary">
-              {"</" + extractInitials(info.name) + ">"}
+              {"</Broslunas>"}
             </span>
           </a>
 
@@ -41,7 +33,7 @@ export default function Nav({ posts }) {
           >
             <i className="fas fa-download mr-2"></i>
             <span className="hidden lg:inline-block font-medium">
-              Download CV
+              Descargar CV
             </span>
             <span className="lg:hidden font-medium">CV</span>
           </a>

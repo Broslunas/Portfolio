@@ -1,19 +1,15 @@
 export const info = {
-  name: "Bart Simpson",
+  name: "Broslunas",
   brief_description:
-    "I'm a mischievous full stack developer with a knack for troublemaking.",
-  role: "Full Stack Developer",
-  picture: "/pic.png",
-  picture_alt: "Bart Simpson",
-  location: "Springfield, USA",
+    "Soy un desarrollador Front-End, con la esperanza de ser alguien en la vida",
+  role: "Front-End Developer",
+  picture: "/favicon.png",
+  picture_alt: "Broslunas Logo",
+  location: "Islas Canarias, España",
   cv: "/resume.pdf",
 
   about: {
-    description: `I'm a full stack developer with a passion for causing a little chaos in web development.
-    I have a solid foundation in computer science, although I prefer skateboarding over studying.
-    I excel in building web applications using React, Node.js, and MongoDB.
-    I'm known for my sharp wit and quick thinking, traits that serve me well in coding and pranks alike.
-    Looking for a challenge? Let's create something memorable together.`,
+    description: `No def.`,
     education: [
       {
         title: "Self-Taught Developer Extraordinaire",
