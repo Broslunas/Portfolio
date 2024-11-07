@@ -12,6 +12,8 @@ export default function Nav({ posts }) {
     { name: "Proyectos", href: "/proyectos" },
     { name: "Blog", href: "https://blog.broslunas.com" },
     { name: "Contacto", href: "/contacto" },
+    { name: "Links", href: "https://linktree.broslunas.com" },
+
   ];
 
 
