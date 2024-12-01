@@ -1,6 +1,7 @@
 ---
 import { SITE, SOCIALS } from "@consts"
 import Container from "@components/Container.astro"
+import MonitorStatus from '@components/MonitorsStatus.astro';
 ---
 
 <footer class="relative bg-white dark:bg-black">
@@ -30,11 +31,7 @@ import Container from "@components/Container.astro"
             </a>
           </div>
           <div class="flex gap-2 justify-center sm:justify-end items-center">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-            </span>
-            All systems normal
+            <MonitorStatus />
           </div>
         </div>
       </Container>

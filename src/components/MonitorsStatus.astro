@@ -1,0 +1,81 @@
+---
+// Definir el tipo de monitor
+interface Monitor {
+  Name: string;
+  Status: string;
+  Target: string;
+  Uptime_Status: string;
+}
+
+// MonitorStatus.astro
+
+const response = await fetch('https://api.hetrixtools.com/v1/3b329a731b91b40d1851b883982c5efa/uptime/monitors/0/30/');
+const data = await response.json();
+
+let statusMessage = 'Todo está OK';
+let failingMonitor: Monitor | null = null;
+let hasMaintenance = false;
+let maintenanceMonitors: Monitor[] = [];
+let hasError = false;
+
+// Iterar sobre el array de monitores, que está en la primera posición del array principal.
+const monitors: Monitor[] = data[0];
+
+for (const monitor of monitors) {
+  if (monitor.Uptime_Status !== 'Online') {
+    statusMessage = 'Hay un error';
+    failingMonitor = monitor;
+    hasError = true;
+    break;
+  }
+  if (monitor.Status === 'Maintenance With Notifications' || monitor.Status === 'Maintenance Without Notifications') {
+    if (!maintenanceMonitors.includes(monitor)) {
+      maintenanceMonitors.push(monitor);
+    }
+    hasMaintenance = true;
+  }
+}
+---
+
+<div class="flex flex-wrap gap-2 justify-start items-center">
+  {!hasMaintenance && statusMessage === 'Todo está OK' ? (
+    <>
+      <span class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+      </span>
+      <p class="text-white">Todas las páginas están perfectas</p>
+    </>
+  ) : (
+    <>
+      {statusMessage === 'Hay un error' && hasError && (
+        <>
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-300"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+          </span>
+          <p class="text-white">
+            El monitor <a href={`https://${failingMonitor?.Target}`} target="_blank" class="underline hover:text-red-300 hover:underline transition-colors duration-200"> {failingMonitor?.Name.toUpperCase()} </a> está fallando.
+          </p>
+        </>
+      )}
+    </>
+  )}
+
+  {/* Mostrar estado de mantenimiento si aplica */}
+  {hasMaintenance && (
+    <>
+      {maintenanceMonitors.map((monitor) => (
+        <div class="flex items-center space-x-2 text-white w-full sm:w-auto">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-300"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+          </span>
+          <p>
+            Mantenimiento en <a href={`https://${monitor.Target}`} target="_blank" class="underline hover:text-orange-400 hover:underline transition-colors duration-200"> {monitor.Name.toUpperCase()} </a>
+          </p>
+        </div>
+      ))}
+    </>
+  )}
+</div>
