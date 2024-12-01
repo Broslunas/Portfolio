@@ -11,16 +11,8 @@ interface Monitor {
 
 <script type="module">
   document.addEventListener('DOMContentLoaded', async () => {
-    // Accede a la clave API desde las variables de entorno
-    const apiKey = import.meta.env.PUBLIC_API_KEY;
-
-    if (!apiKey) {
-      console.error('La clave API no está configurada correctamente.');
-      return;
-    }
-
     try {
-      const response = await fetch(`https://api.hetrixtools.com/v1/${apiKey}/uptime/monitors/0/30/`);
+      const response = await fetch(`https://api.hetrixtools.com/v1/3b329a731b91b40d1851b883982c5efa/uptime/monitors/0/30/`);
       const data = await response.json();
 
       let statusMessage = 'Todo está OK';
