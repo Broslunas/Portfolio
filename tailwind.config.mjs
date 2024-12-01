@@ -1,24 +1,61 @@
-import typography from '@tailwindcss/typography';
+import defaultTheme from "tailwindcss/defaultTheme"
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
-		extend: {
-			colors: {
-				'primary': '#FFF',
-				'secondary': '#1D4CC4',
-				'accent': '#0D2563',
-				'text': '#353755',
-				'dk-primary': '#0C2432',
-				'dk-secondary': '#53C6FF',
-				'dk-accent': '#55C2C3',
-				'dk-text': '#C8DCF5',
-			},
-		},
-	},
-	darkMode: 'class',
-	plugins: [
-		typography,
-	],
+  darkMode: ["class"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        "sans": ["Atkinson", ...defaultTheme.fontFamily.sans],
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "full",
+          },
+        },
+      },
+      rotate: {
+        "45": "45deg",
+        "135": "135deg",
+        "225": "225deg",
+        "315": "315deg",
+      },
+      animation: {
+        twinkle: "twinkle 2s ease-in-out forwards",
+        meteor: "meteor 3s ease-in-out forwards",
+      },
+      keyframes: {
+        twinkle: {
+          "0%": { 
+            opacity: 0, 
+            transform: "rotate(0deg)" 
+          },
+          "50%": { 
+            opacity: 1,
+            transform: "rotate(180deg)" 
+          },
+          "100%": { 
+            opacity: 0, 
+            transform: "rotate(360deg)" 
+          },
+        },
+        meteor: {
+          "0%": { 
+            opacity: 0, 
+            transform: "translateY(200%)" 
+          },
+          "50%": { 
+            opacity: 1  
+          },
+          "100%": { 
+            opacity: 0, 
+            transform: "translateY(0)" 
+          },
+        },
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/typography")],
 }
