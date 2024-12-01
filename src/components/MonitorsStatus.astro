@@ -1,5 +1,4 @@
 ---
-// Definir el tipo de monitor
 interface Monitor {
   Name: string;
   Status: string;
@@ -12,75 +11,87 @@ interface Monitor {
 
 <script type="module">
   document.addEventListener('DOMContentLoaded', async () => {
-    const response = await fetch('https://api.hetrixtools.com/v1/3b329a731b91b40d1851b883982c5efa/uptime/monitors/0/30/');
-    const data = await response.json();
+    // Accede a la clave API desde las variables de entorno
+    const apiKey = import.meta.env.PUBLIC_API_KEY;
 
-    let statusMessage = 'Todo está OK';
-    let failingMonitor = null;
-    let hasMaintenance = false;
-    let maintenanceMonitors = [];
-    let hasError = false;
-
-    const monitors = data[0];
-
-    for (const monitor of monitors) {
-      if (monitor.Uptime_Status !== 'Online') {
-        statusMessage = 'Hay un error';
-        failingMonitor = monitor;
-        hasError = true;
-        break;
-      }
-      if (monitor.Status === 'Maintenance With Notifications' || monitor.Status === 'Maintenance Without Notifications') {
-        if (!maintenanceMonitors.includes(monitor)) {
-          maintenanceMonitors.push(monitor);
-        }
-        hasMaintenance = true;
-      }
+    if (!apiKey) {
+      console.error('La clave API no está configurada correctamente.');
+      return;
     }
 
-    const container = document.getElementById('monitor-status');
+    try {
+      const response = await fetch(`https://api.hetrixtools.com/v1/${apiKey}/uptime/monitors/0/30/`);
+      const data = await response.json();
 
-    if (!hasMaintenance && statusMessage === 'Todo está OK') {
-      container.innerHTML = `
-        <span class="relative flex h-3 w-3">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-        </span>
-        <p class="text-white">Todas las páginas están perfectas</p>
-      `;
-    } else {
-      if (statusMessage === 'Hay un error' && hasError) {
+      let statusMessage = 'Todo está OK';
+      let failingMonitor = null;
+      let hasMaintenance = false;
+      let maintenanceMonitors = [];
+      let hasError = false;
+
+      const monitors = data[0];
+
+      for (const monitor of monitors) {
+        if (monitor.Uptime_Status !== 'Online') {
+          statusMessage = 'Hay un error';
+          failingMonitor = monitor;
+          hasError = true;
+          break;
+        }
+        if (monitor.Status === 'Maintenance With Notifications' || monitor.Status === 'Maintenance Without Notifications') {
+          if (!maintenanceMonitors.includes(monitor)) {
+            maintenanceMonitors.push(monitor);
+          }
+          hasMaintenance = true;
+        }
+      }
+
+      const container = document.getElementById('monitor-status');
+
+      if (!hasMaintenance && statusMessage === 'Todo está OK') {
         container.innerHTML = `
           <span class="relative flex h-3 w-3">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-300"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
           </span>
-          <p class="text-white">
-            El monitor <a href="https://${failingMonitor?.Target}" target="_blank" class="underline hover:text-red-300 hover:underline transition-colors duration-200">
-              ${failingMonitor?.Name.toUpperCase()}
-            </a> está fallando.
-          </p>
+          <p class="text-white">Todas las páginas están perfectas</p>
         `;
-      }
-
-      if (hasMaintenance) {
-        maintenanceMonitors.forEach(monitor => {
-          const maintenanceHTML = `
-            <div class="flex items-center space-x-2 text-white w-full sm:w-auto">
-              <span class="relative flex h-3 w-3">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-300"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
-              </span>
-              <p>
-                Mantenimiento en <a href="https://${monitor.Target}" target="_blank" class="underline hover:text-orange-400 hover:underline transition-colors duration-200">
-                  ${monitor.Name.toUpperCase()}
-                </a>
-              </p>
-            </div>
+      } else {
+        if (statusMessage === 'Hay un error' && hasError) {
+          container.innerHTML = `
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-300"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            </span>
+            <p class="text-white">
+              El monitor <a href="https://${failingMonitor?.Target}" target="_blank" class="underline hover:text-red-300 hover:underline transition-colors duration-200">
+                ${failingMonitor?.Name.toUpperCase()}
+              </a> está fallando.
+            </p>
           `;
-          container.innerHTML += maintenanceHTML;
-        });
+        }
+
+        if (hasMaintenance) {
+          maintenanceMonitors.forEach(monitor => {
+            const maintenanceHTML = `
+              <div class="flex items-center space-x-2 text-white w-full sm:w-auto">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-300"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                </span>
+                <p>
+                  Mantenimiento en <a href="https://${monitor.Target}" target="_blank" class="underline hover:text-orange-400 hover:underline transition-colors duration-200">
+                    ${monitor.Name.toUpperCase()}
+                  </a>
+                </p>
+              </div>
+            `;
+            container.innerHTML += maintenanceHTML;
+          });
+        }
       }
+    } catch (error) {
+      console.error('Error al cargar los datos:', error);
     }
   });
 </script>
