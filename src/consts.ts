@@ -30,8 +30,16 @@ export const LINKS: Links = [
     HREF: "/projects", 
   },
   { 
+    TEXT: "Blog", 
+    HREF: "https://blog.broslunas.com", 
+  },
+  { 
     TEXT: "Videos", 
     HREF: "https://videos.broslunas.com", 
+  },
+  { 
+    TEXT: "Linktree", 
+    HREF: "https://linktree.broslunas.com", 
   },
   { 
     TEXT: "Uptime", 
