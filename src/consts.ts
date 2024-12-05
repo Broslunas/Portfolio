@@ -7,28 +7,16 @@ export const SITE: Site = {
   AUTHOR: "Broslunas",
 }
 
-// Work Page
-export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
-}
-
-// Blog Page
-export const BLOG: Page = {
-  TITLE: "Blog",
-  DESCRIPTION: "Writing on topics I am passionate about.",
-}
-
 // Projects Page 
 export const PROJECTS: Page = {
-  TITLE: "Projects",
-  DESCRIPTION: "Recent projects I have worked on.",
+  TITLE: "Proyectos",
+  DESCRIPTION: "Proyectos recientes en los que he participado.",
 }
 
 // Search Page
 export const SEARCH: Page = {
-  TITLE: "Search",
-  DESCRIPTION: "Search all posts and projects by keyword.",
+  TITLE: "Buscador",
+  DESCRIPTION: "Buscar en el sitio web.",
 }
 
 // Links
@@ -44,6 +32,10 @@ export const LINKS: Links = [
   { 
     TEXT: "Videos", 
     HREF: "https://videos.broslunas.com", 
+  },
+  { 
+    TEXT: "Uptime", 
+    HREF: "https://uptime.broslunas.com", 
   },
 ]
 
