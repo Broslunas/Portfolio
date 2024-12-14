@@ -1,13 +1,30 @@
 ---
-import { SITE, SOCIALS } from "@consts"
 import Container from "@components/Container.astro"
-import MonitorStatus from '@components/MonitorsStatus.astro';
+import { getCollection } from "astro:content"
+import FooterProjects from "@components/FooterProjects"
+import MonitorStatus from "@components/MonitorStatus.astro"
+import { LINKS, SITE } from "@consts"
+const { pathname } = Astro.url
+const subpath = pathname.match(/[^/]+/g)
+import { cn } from "@lib/utils"
+
+const posts = (await getCollection("blog"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,8)
+
+const projects = (await getCollection("projects"))
+  .filter(project => !project.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,8)
 ---
+
+
 
 <footer class="relative bg-white dark:bg-black">
   <div class="animate">
     <section class="py-5">
-      <Container size="md">
+      <Container size="lg">
         <div class="flex items-center justify-center sm:justify-end">
           <button id="back-to-top" aria-label="Back to top of page" class="group flex w-fit p-1.5 gap-1.5 text-sm items-center border rounded hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-current group-hover:stroke-black group-hover:dark:stroke-white rotate-90">
@@ -15,13 +32,71 @@ import MonitorStatus from '@components/MonitorsStatus.astro';
               <polyline points="12 19 5 12 12 5" class="translate-x-1 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
             </svg>
             <div class="w-full group-hover:text-black group-hover:dark:text-white transition-colors duration-300 ease-in-out">
-              Volver al Inicio
+              Volver al inicio
             </div>
           </button>
         </div>
       </Container>
     </section>
-  
+    
+    <section class="bg-muted px-6 py-12 w-full flex justify-center items-center">
+      <div class="max-w-7xl grid grid-cols-1 sm:grid-cols-5 gap-8 text-sm w-full">
+        <div class="grid gap-1 text-center">
+          <h1 class="font-semibold">Páginas</h1>
+          <a class="mt-3 text-black dark:text-white" href="/">Inicio</a>
+          <a class="mt-3 text-black dark:text-white" href="/broslunas">Broslunas</a>
+          <a class="mt-3 text-black dark:text-white" href="/projects">Proyectos</a>
+          <a class="mt-3 text-black dark:text-white" href="/blog">Blog</a>
+          <a class="mt-3 text-black dark:text-white" href="/wiki">Wiki</a>
+          <a class="mt-3 text-black dark:text-white" href="https://uptime.broslunas.com">Status</a>
+
+        </div>
+        <div class="grid gap-1 text-center">
+          <h1 class="font-semibold">Ultimos Proyectos</h1>
+          <ul class="space-y-4">
+            {projects.map((project) => (
+              <li>
+                <FooterProjects entry={project}/>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="grid gap-1 text-center">
+          <h1 class="font-semibold">Navegación Principal</h1>
+          {
+            LINKS.map((LINK) => (
+              <a href={LINK.HREF} class={cn("mt-3 text-black dark:text-white", pathname === LINK.HREF || "/" + subpath?.[0] === LINK.HREF )}>
+                {LINK.TEXT}
+              </a>
+            ))
+          }
+        </div>
+        <div class="grid gap-1 text-center">
+          <h1 class="font-semibold">Ultimos Post</h1>
+          <ul class="space-y-4">
+            {posts.map((post) => (
+              <li>
+                <FooterProjects entry={post} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="grid gap-1 text-center">
+          <h1 class="font-semibold">Otros</h1>
+          <a class="mt-3 text-black dark:text-white" href="/sn">Redes Sociales</a>
+          <div class="flex flex-wrap gap-1 items-center justify-center" >
+            <a class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" target="_blank" href="https://www.x.com/Broslunas">
+              <img alt="Logo X" src="/assets/svg/x.svg"/>
+            </a>
+            <a class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" href="/contacto">
+              <img alt="Icono Contacto" src="/assets/svg/contact.svg"/>
+            </a>
+          </div>
+          <a class="mt-3 text-black dark:text-white" href="/legal/terminos-de-uso">Términos</a>
+          <a class="mt-3 text-black dark:text-white" href="/legal/politica-de-privacidad">Privacidad</a>
+        </div>
+      </div>
+    </section>
     <section class=" py-5 overflow-hidden whitespace-nowrap border-t border-black/10 dark:border-white/25">
       <Container size="md">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -36,47 +111,62 @@ import MonitorStatus from '@components/MonitorsStatus.astro';
         </div>
       </Container>
     </section>
-  
-    <section class=" py-5 overflow-hidden whitespace-nowrap border-t border-black/10 dark:border-white/25">
+    <section class="py-5 overflow-hidden whitespace-nowrap border-t border-black/10 dark:border-white/25">
       <Container size="md">
+        <div class="flex items-center justify-center">
+          <a class="mt-3 text-black dark:text-white" href="/contacto/newsletter">→ Suscribete a nuestra Newsletter ←</a>
+        </div>
+      </Container>
+    </section>
+
+    <section class="py-5 overflow-hidden whitespace-nowrap border-t border-black/10 dark:border-white/25">
+      <Container size="lg">
         <div class="h-full grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="order-2 sm:order-1 flex flex-col items-center justify-center sm:items-start">
             <div class="legal">
-              <a href="/legal/terminos" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-                Términos
+              <a href="/legal/terminos-de-uso" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
+                Terminos
               </a> |
-              <a href="/legal/privacidad" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
+              <a href="/legal/politica-de-privacidad" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
                 Privacidad
               </a>
             </div>
             <div class="text-sm mt-2">
-              &copy; 2024 | Todos los derechos reservados
+              &copy; Broslunas 2024 | Todos los derechos reservados
             </div>
           </div>
-  
           <div class="order-1 sm:order-2 flex justify-center sm:justify-end">
             <div class="flex flex-wrap gap-1 items-center justify-center">
-              {
-                SOCIALS.map((SOCIAL) => (
-                  <a 
-                    href={SOCIAL.HREF} 
-                    target="_blank" 
-                    aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`} 
-                    class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend"
-                  >
-                    <svg class="size-full fill-current group-hover:fill-black group-hover:dark:fill-white blend">
-                      <use href={`/social.svg#${SOCIAL.ICON}`} />
-                    </svg>
-                  </a>
-                ))
-              }
-              </div>
-          </div>
+              <a 
+              class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" 
+              href="/"><img alt="Inicio Inicio" src="/assets/svg/home.svg"/></a>
+
+              <a 
+              class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" 
+              href="/sn"><img alt="Icono Compartir" src="/assets/svg/share.svg"/></a>
+
+              <a 
+              class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" 
+              href="/yt"><img alt="Logo YT" src="/assets/svg/yt.svg"/></a>
+
+              <a 
+              class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" 
+              target="_blank" href="https://www.instagram.com/_pablito_luna_/"><img alt="Logo IG" src="/assets/svg/instagram.svg"/></a>
+
+              <a 
+              class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" 
+              target="_blank" href="https://www.x.com/Broslunas/"><img alt="Logo X " src="/assets/svg/x.svg"/></a>
+
+              <a 
+              class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" 
+              target="_blank" href="https://www.reddit.com/user/BrosLunas/"><img alt="Logo Reddit" src="/assets/svg/reddit.svg"/></a>
+
+              <a class="group size-10 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend" target="_blank" href="https://github.com/BrosLunas/"><img alt="Logo Github" src="/assets/svg/github.svg"/></a>
+            </div>
         </div>
       </Container>
     </section>
   </div>
-
 </footer>
 
 <script is:inline>

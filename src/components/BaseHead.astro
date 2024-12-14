@@ -1,5 +1,4 @@
 ---
-
 interface Props {
   title: string
   description: string
@@ -8,16 +7,16 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description, image = "/logo.png" } = Astro.props
+const { title, description } = Astro.props
 ---
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/png" href="/logo.png" />
+<link rel="icon" href="/assets/img/favicon.ico">
 <meta name="generator" content={Astro.generator} />
 
-<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin>
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -32,18 +31,17 @@ const { title, description, image = "/logo.png" } = Astro.props
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content="/logo.png"/>
+<meta property="og:image" content="/assets/img/favicon.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content="/logo.png" />
-
+<meta property="twitter:image" content="/assets/img/favicon.png" />
 
 <!-- Sitemap -->
-<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap-index.xml" />
 
 <!-- RSS Feed -->
 <link rel="alternate" type="application/rss+xml" title={title} href={`${Astro.site}rss.xml`}/>
@@ -54,7 +52,6 @@ const { title, description, image = "/logo.png" } = Astro.props
 <script is:inline src="/js/animate.js"></script>
 
 <!-- <ViewTransitions  /> -->
-
 <script>
   import type { TransitionBeforeSwapEvent } from "astro:transitions/client"
   document.addEventListener("astro:before-swap", (e) =>
