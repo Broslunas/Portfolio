@@ -13,6 +13,30 @@ export const PROJECTS: Page = {
   DESCRIPTION: "Proyectos recientes en los que he participado.",
 }
 
+// Modpacks Page 
+export const MODPACK: Page = {
+  TITLE: "Proyectos",
+  DESCRIPTION: "Proyectos recientes en los que he participado.",
+}
+
+// Contacto Page 
+export const CONTACTO: Page = {
+  TITLE: "Contacto",
+  DESCRIPTION: "Contacta conmigo a través del siguiente formulario.",
+}
+
+// Newsletter Page 
+export const NEWSLETTER: Page = {
+  TITLE: "Newsletter",
+  DESCRIPTION: "Únete a nuestra newsletter para estar al tanto de todas las novedades.",
+}
+
+// Newsletter Confirmada Page 
+export const ENVIADO: Page = {
+  TITLE: "Formulario Enviado",
+  DESCRIPTION: "Gracias por rellenar el formulario.",
+}
+
 // Search Page
 export const SEARCH: Page = {
   TITLE: "Buscador",

@@ -1,0 +1,35 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import ModpacksArticleTopLayout from "@layouts/ModpacksArticleTopLayout.astro"
+import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
+
+// Create the static projects pages
+export async function getStaticPaths() {
+	const modpacks = await getCollection("modpacks")
+	return modpacks.map((modpacks) => ({
+		params: { slug: modpacks.slug },
+		props: modpacks,
+	}))
+}
+
+// Get the requested project
+type Props = CollectionEntry<"modpacks">
+const modpack = Astro.props
+const { title, summary } = modpack.data
+---
+
+<PageLayout title={title} description={summary}>
+  <TopLayout>
+    <div class="animate">
+      <ModpacksArticleTopLayout entry={modpack} />
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <div class="animate">
+      <ArticleBottomLayout entry={modpack} />
+    </div>
+  </BottomLayout>
+</PageLayout>
