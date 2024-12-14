@@ -2,7 +2,7 @@
 title: "Juego 3D | Zelda (+ Demo)"
 summary: "He creado el Zelda en html, js y blender para un navegador"
 date: "05 29 2024"
-draft: false
+draft: true
 tags:
 
 - Juego 3D

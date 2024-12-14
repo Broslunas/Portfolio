@@ -8,7 +8,7 @@ export const LINKS: Links = [
     },
     { 
       TEXT: "Blog", 
-      HREF: "/blog",
+      HREF: "https://blog.broslunas.com",
     },
     { 
       TEXT: "Wikis",
@@ -23,20 +23,8 @@ export const LINKS: Links = [
       HREF: "https://games.broslunas.com/", 
     },
     { 
-      TEXT: "Code", 
-      HREF: "https://code.broslunas.com/", 
-    },
-    { 
-      TEXT: "FileDrop", 
-      HREF: "https://filedrop.broslunas.com/", 
-    },
-    { 
-      TEXT: "Cursos", 
-      HREF: "https://cursos.broslunas.com/", 
-    },
-    { 
-      TEXT: "AiQr", 
-      HREF: "https://aiqr.broslunas.com/", 
+      TEXT: "Linktree", 
+      HREF: "https://linktree.broslunas.com", 
     },
     { 
       TEXT: "Uptime", 
