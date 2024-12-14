@@ -20,7 +20,7 @@ En el juego, consiste en que el jugador o usuario controla una nave la cual tien
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/arkanoid.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/arkanoid.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

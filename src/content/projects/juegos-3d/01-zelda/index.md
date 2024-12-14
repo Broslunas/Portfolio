@@ -14,6 +14,6 @@ wikiUrl: /wikis/juegos/3d/zelda/
 ---
 
 ## Gameplay
-[![Zelda Game](/assets/img/games/zelda.png)](/assets/video/gameplay/zelda.mp4)
+[![Zelda Game](https://assets.broslunas.com/games/zelda.png)](https://assets.broslunas.com/gameplay/zelda.mp4)
 
 > Escrito por **Broslunas**

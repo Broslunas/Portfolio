@@ -25,7 +25,7 @@ Puedes descargarlo haciendo click en el enlace que se encuentra a continuación
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/app/android.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/app/android.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

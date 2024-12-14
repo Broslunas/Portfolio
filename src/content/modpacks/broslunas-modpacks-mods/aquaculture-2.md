@@ -87,8 +87,8 @@ Otro botín
 
 ## Capturas
 
-<img src="/assets/img/minecraft/mods/aquaculture-2/1.png" alt="Mod Image">
-<img src="/assets/img/minecraft/mods/aquaculture-2/2.png" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/aquaculture-2/1.png" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/aquaculture-2/2.png" alt="Mod Image">
 
 
 

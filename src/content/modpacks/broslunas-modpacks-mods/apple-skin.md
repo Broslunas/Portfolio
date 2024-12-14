@@ -16,16 +16,16 @@ Nota: AppleSkin proporciona información sobre algunas mecánicas que son invisi
 
 ## Características
 - Agrega información sobre el valor de los alimentos a las descripciones emergentes:
-<img src="/assets/img/minecraft/mods/apple-skin/1.png" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/apple-skin/1.png" alt="Mod Image">
 
 - Agrega una visualización de la saturación y el agotamiento al HUD:
-<img src="/assets/img/minecraft/mods/apple-skin/2.gif" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/apple-skin/2.gif" alt="Mod Image">
 
 - Agrega una visualización del hambre/saturación potencial restaurada mientras se sostiene la comida:
-<img src="/assets/img/minecraft/mods/apple-skin/3.gif" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/apple-skin/3.gif" alt="Mod Image">
 
 - Agrega una visualización de la salud potencial restaurada mientras se sostiene la comida:
-<img src="/assets/img/minecraft/mods/apple-skin/4.gif" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/apple-skin/4.gif" alt="Mod Image">
 
 - Agrega información de hambre/saturación/agotamiento a la superposición de depuración (F3)
 - Sincroniza el valor de saturación y agotamiento con el cliente.

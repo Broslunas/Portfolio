@@ -10,7 +10,7 @@ tags:
 modpacksDownloadUrl: https://www.curseforge.com/minecraft/mc-mods/amendments/files/all?page=1&pageSize=20&version=1.20.1&gameVersionTypeId=1
 modpacksLinkUrl: https://www.curseforge.com/minecraft/mc-mods/amendments
 ---
-<img src="/assets/img/minecraft/mods/amendements.png" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/amendements.png" alt="Mod Image">
 
 ## 📖 Acerca de 📖
 

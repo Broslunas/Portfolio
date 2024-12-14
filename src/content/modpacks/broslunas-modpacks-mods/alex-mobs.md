@@ -13,7 +13,7 @@ modpacksLinkUrl: https://www.curseforge.com/minecraft/mc-mods/alexs-mobs
 ## Dependencias
 Este mod requiere: [CITADEL](https://www.curseforge.com/minecraft/mc-mods/citadel/files/all?page=1&pageSize=20&version=1.20.1&gameVersionTypeId=1)
 
-<img src="/assets/img/minecraft/mods/alex-mobs/alex-mobs.png" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/alex-mobs/alex-mobs.png" alt="Mod Image">
 
 Alex's Mobs es un mod de Forge que añade 89 nuevos mobs a Minecraft. Todos estos mobs se dividen en dos categorías: la mayoría son criaturas del mundo real, como los osos pardos, los correcaminos, las orcas, etc.; pero algunos son puramente ficticios, como el Endergade y la serpiente de hueso. Todas estas criaturas cumplen un propósito necesario y tienen objetos, mecánicas o funciones únicas, ya que no hay criaturas puramente estéticas. Dicho esto, también ayudan a que algunos entornos del juego parezcan más vivos. Los modelos, las texturas, las animaciones y la IA son estilísticamente compatibles con las últimas incorporaciones del juego original.
 
@@ -180,7 +180,7 @@ Muchos de estos mobs tienen botines o elementos únicos asociados a ellos. Sigui
 
 Al unirse a un mundo con Alex's Mobs por primera vez, el jugador recibirá el Diccionario de animales. Esta es una guía y documentación muy básica de cada criatura agregada por el mod, y debería brindar información sobre los usos de cada uno de los mobs o sus botines.
 
-<img src="/assets/img/minecraft/mods/alex-mobs/diccionario.png" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/alex-mobs/diccionario.png" alt="Mod Image">
 
 Si se pierde de alguna manera, este libro se puede volver a crear con un libro original, un tinte verde y cualquier elemento del mod.
 

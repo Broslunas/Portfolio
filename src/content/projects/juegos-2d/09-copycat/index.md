@@ -13,6 +13,6 @@ wikiUrl: /wikis/juegos/2d/copycat/
 ---
 
 ## Gameplay
-[![Copycat Game](/assets/img/games/copycat.png)](/assets/video/gameplay/copycat.mp4)
+[![Copycat Game](https://assets.broslunas.com/games/copycat.png)](https://assets.broslunas.com/gameplay/copycat.mp4)
 
 > Escrito por **Broslunas**

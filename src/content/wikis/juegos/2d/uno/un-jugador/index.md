@@ -28,7 +28,7 @@ El juego como tal no cuenta con controles táctiles todo se hace mediante el rat
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/uno-singleplayer.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/uno-singleplayer.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

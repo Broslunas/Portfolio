@@ -13,6 +13,6 @@ wikiUrl: /wikis/juegos/2d/ahorcado/
 ---
 
 ## Gameplay
-[![Ahorcado Game](/assets/img/games/ahorcado.png)](/assets/video/gameplay/ahorcado.mp4)
+[![Ahorcado Game](https://assets.broslunas.com/games/ahorcado.png)](https://assets.broslunas.com/gameplay/ahorcado.mp4)
 
 > Escrito por **Broslunas**

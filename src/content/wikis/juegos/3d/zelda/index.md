@@ -2,7 +2,7 @@
 title: "Zelda"
 summary: "Wiki de Zelda"
 date: "08 14 2024"
-draft: false
+draft: true
 tags:
 - Juego 3D
 - Desktop
@@ -39,7 +39,7 @@ Los controles en los dispositivos móviles son mucho mas sencillos solo tienes q
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/zelda.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/zelda.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

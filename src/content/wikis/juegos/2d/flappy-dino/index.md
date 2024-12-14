@@ -20,7 +20,7 @@ Es un videojuego de mecánicas simples que pone al jugador en las plumas de un d
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/flappy-dino.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/flappy-dino.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

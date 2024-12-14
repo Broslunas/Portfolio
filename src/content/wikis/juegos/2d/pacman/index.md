@@ -22,7 +22,7 @@ Pac-Man fue creado por el diseñador Toru Iwatani, de la empresa japonesa Namco.
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/pacman.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/pacman.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

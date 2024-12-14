@@ -12,6 +12,6 @@ wikiUrl: /wikis/juegos/2d/pacman/
 ---
 
 ## Gameplay
-[![Pacman Game](/assets/img/games/pacman.png)](/assets/video/gameplay/pacman.mp4)
+[![Pacman Game](https://assets.broslunas.com/games/pacman.png)](https://assets.broslunas.com/gameplay/pacman.mp4)
 
 > Escrito por **Broslunas**

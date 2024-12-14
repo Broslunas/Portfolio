@@ -14,6 +14,6 @@ wikiUrl: /wikis/juegos/2d/coloron/
 ---
 
 ## Gameplay
-[![Coloron Game](/assets/img/games/coloron.png)](/assets/video/gameplay/coloron.mp4)
+[![Coloron Game](https://assets.broslunas.com/games/coloron.png)](https://assets.broslunas.com/gameplay/coloron.mp4)
 
 > Escrito por **Broslunas**

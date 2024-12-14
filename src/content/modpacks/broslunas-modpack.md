@@ -18,8 +18,8 @@ Las principales características del Modpack son:
 ### - Nueva Generación de Terreno
 Gracias a los mods Biomes O' Plenty, Terralith y Tectonic, obtenemos unas generaciones espectaculares que dan a entender que estamos en un Minecraft 2.
 
-<img src="/assets/img/minecraft/mods/terralith.jpeg" alt="Mod Image">
-<img src="/assets/img/minecraft/mods/biomes-o-plenty.png" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/terralith.jpeg" alt="Mod Image">
+<img src="https://assets.broslunas.com/minecraft/mods/biomes-o-plenty.png" alt="Mod Image">
 
 ### - Nuevos Mobs
 Gracias a Alex's Mobs entre otros tenemos una infinidad de nuevos mobs de todo tipo.

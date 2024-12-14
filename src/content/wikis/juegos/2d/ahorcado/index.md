@@ -19,7 +19,7 @@ El concepto de ahorcado, consiste en adivinar una palabra en el menor número de
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/ahorcado.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/ahorcado.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

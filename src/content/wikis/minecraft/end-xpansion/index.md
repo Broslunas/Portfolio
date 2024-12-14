@@ -24,7 +24,7 @@ Puedes descargarlo en la pagina de Courseforge, una de las mas utilizadas en tod
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/end-xpansion/end-xpansion.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/minecraft/end-xpansion.mp4" type="video/mp4">
 </video>
 
 

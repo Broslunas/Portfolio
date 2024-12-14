@@ -24,7 +24,7 @@ El concepto de Tetris, en contraste, es demasiado simple, tienes que rotar y enc
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/tetris.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/tetris.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

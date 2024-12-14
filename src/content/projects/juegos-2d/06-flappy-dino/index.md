@@ -14,6 +14,6 @@ wikiUrl: /wikis/juegos/2d/flappy-dino/
 ---
 
 ## Gameplay
-[![Flappy Dino Game](/assets/img/games/flappy-dino.png)](/assets/video/gameplay/flappy-dino.mp4)
+[![Flappy Dino Game](https://assets.broslunas.com/games/flappy-dino.png)](https://assets.broslunas.com/gameplay/flappy-dino.mp4)
 
 > Escrito por **Broslunas**

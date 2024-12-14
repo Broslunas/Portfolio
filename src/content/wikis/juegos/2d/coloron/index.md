@@ -20,7 +20,7 @@ El concepto de Coloron, consiste en que tenemos una pelota que va a ir cambiando
 # Video
 Aquí le dejamos un corto video de como utilizar la web
 <video class="container video" controls muted>
-    <source src="/assets/video/gameplay/coloron.mp4" type="video/mp4">
+    <source src="https://assets.broslunas.com/gameplay/coloron.mp4" type="video/mp4">
 </video>
 
 > Escrito por **Broslunas**

@@ -13,6 +13,6 @@ wikiUrl: /wikis/juegos/2d/pingpong/
 ---
 
 ## Gameplay
-[![Ping Pong Game](/assets/img/games/pingpong.png)](/assets/video/gameplay/pingpong.mp4)
+[![Ping Pong Game](https://assets.broslunas.com/games/pingpong.png)](https://assets.broslunas.com/gameplay/pingpong.mp4)
 
 > Escrito por **Broslunas**
