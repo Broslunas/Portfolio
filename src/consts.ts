@@ -7,18 +7,6 @@ export const SITE: Site = {
   AUTHOR: "Broslunas",
 }
 
-// Work Page
-export const WORK: Page = {
-  TITLE: "Trabajos",
-  DESCRIPTION: "Estás buscando mi repertorio de trabajos a lo largo de mi carrera. Aquí los encontrarás",
-}
-
-// Blog Page
-export const BLOG: Page = {
-  TITLE: "Blog",
-  DESCRIPTION: "Blog personal donde podrás encontrar todas las publicaciones relacionadas con broslunas.com.",
-}
-
 // Projects Page 
 export const PROJECTS: Page = {
   TITLE: "Proyectos",
@@ -107,17 +95,6 @@ export const LINKS: Links = [
     ]
   },
   { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
-    SUBLINKS: [
-      { TEXT: "Aprende JS", HREF: "/blog/aprendejs" },
-      { TEXT: "Wikis 2.0", HREF: "/blog/wikis/v-2" },
-      { TEXT: "Cloud Updates", HREF: "/blog/cloud/updates" },
-      { TEXT: "Android & Desktop", HREF: "/blog/broslunas" },
-      { TEXT: "Primer Post", HREF: "/blog/primer-post" },
-    ]
-  },
-  { 
     TEXT: "Wikis",
     HREF: "/wikis",
   },
@@ -146,28 +123,9 @@ export const LINKS: Links = [
       { TEXT: "Zelda", HREF: "https://zelda.broslunas.com/" },
     ]
   },
-  
   { 
-    TEXT: "Code", 
-    HREF: "https://code.broslunas.com/", 
-  },
-  { 
-    TEXT: "FileDrop", 
-    HREF: "https://filedrop.broslunas.com/", 
-  },
-  { 
-    TEXT: "Cursos", 
-    HREF: "https://cursos.broslunas.com/", 
-    SUBLINKS: [
-      { TEXT: "Aprende JS", HREF: "https://aprendejs.broslunas.com" },
-      { TEXT: "Astro (Próximamente)", HREF: "https://cursos.broslunas.com/curso-no-disp" },
-      { TEXT: "Node JS (Próximamente)", HREF: "https://cursos.broslunas.com/curso-no-disp" },
-      { TEXT: "React (Próximamente)", HREF: "https://cursos.broslunas.com/curso-no-disp" },
-    ]
-  },
-  { 
-    TEXT: "AiQr", 
-    HREF: "https://aiqr.broslunas.com/", 
+    TEXT: "Linktree", 
+    HREF: "https://linktree.broslunas.com", 
   },
   { 
     TEXT: "Uptime", 
