@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/02-arkanoid
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/02-arkanoid-game/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/02-arkanoid-game/
 wikisDemoUrl: https://games.broslunas.com//02-arkanoid-game/
 ---
 # Información

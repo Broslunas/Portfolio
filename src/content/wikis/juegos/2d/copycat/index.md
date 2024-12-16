@@ -8,7 +8,7 @@ tags:
 - Desktop
 - Android
 projectUrl: /projects/juegos-2d/09-copycat
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/09-copycat/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/09-copycat/
 wikisDemoUrl: https://games.broslunas.com//09-copycat/
 ---
 # Información

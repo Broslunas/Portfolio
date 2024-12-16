@@ -8,7 +8,7 @@ tags:
 - Desktop
 - Android
 projectUrl: /projects/juegos-2d/16-3-en-raya
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/16-3-en-raya/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/16-3-en-raya/
 wikisDemoUrl: https://games.broslunas.com//16-3-en-raya/
 ---
 # Información

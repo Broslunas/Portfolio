@@ -8,7 +8,7 @@ tags:
 - Desktop
 - Android
 projectUrl: /projects/juegos-2d/15-simon
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/15-simon/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/15-simon/
 wikisDemoUrl: https://games.broslunas.com//15-simon/
 ---
 # Información

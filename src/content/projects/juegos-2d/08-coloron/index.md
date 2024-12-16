@@ -9,7 +9,7 @@ tags:
 - Desktop
 - Android
 demoUrl: https://games.broslunas.com//08-coloron/
-repoUrl: https://github.com/BrosLunas/Web-Page/tree/main/08-coloron/
+repoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/08-coloron/
 wikiUrl: /wikis/juegos/2d/coloron/
 ---
 

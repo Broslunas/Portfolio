@@ -8,7 +8,7 @@ tags:
 - Desktop
 - Android
 projectUrl: /projects/juegos-2d/13-uno
-wikisRepoUrl: https://github.com/BrosLunas/uno-broslunas
+wikisRepoUrl: https://github.com/BrosLunas0/uno-broslunas
 wikisDemoUrl: https://uno.broslunas.com//
 ---
 <button class="option animated flex flex-wrap gap-4 justify-center mt-5">

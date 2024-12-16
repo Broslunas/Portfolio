@@ -6,7 +6,7 @@ draft: false
 tags:
 - Android
 projectUrl: /projects/broslunas-android
-wikisRepoUrl: https://github.com/BrosLunas/broslunas-android
+wikisRepoUrl: https://github.com/BrosLunas0/broslunas-android
 wikisDownloadUrl: /downloads/android/broslunas-v1.0.3.apk
 ---
 # Información

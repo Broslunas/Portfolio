@@ -6,7 +6,7 @@ draft: false
 tags:
 - Desktop
 projectUrl: /projects/broslunas-desktop
-wikisRepoUrl: https://github.com/BrosLunas/broslunas-desktop
+wikisRepoUrl: https://github.com/BrosLunas0/broslunas-desktop
 wikisDownloadUrl: /downloads/desktop/broslunas-v1.0.0.rar
 ---
 # Información

@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/10-buscaminas
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/10-buscaminas/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/10-buscaminas/
 wikisDemoUrl: https://games.broslunas.com//10-buscaminas/
 ---
 # Información

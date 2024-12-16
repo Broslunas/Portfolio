@@ -9,7 +9,7 @@ tags:
 - Desktop
 - Android
 demoUrl: https://uno.broslunas.com//
-repoUrl: https://github.com/BrosLunas/uno-broslunas
+repoUrl: https://github.com/BrosLunas0/uno-broslunas
 wikiUrl: /wikis/juegos/2d/uno/
 ---
 

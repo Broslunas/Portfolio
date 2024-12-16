@@ -5,7 +5,7 @@ date: "06 25 2024"
 draft: false
 tags:
 - Android
-repoUrl: https://github.com/BrosLunas/broslunas-android
+repoUrl: https://github.com/BrosLunas0/broslunas-android
 downloadUrl: /downloads/android/broslunas-v1.0.3.apk
 wikiUrl: /wikis/android/
 ---

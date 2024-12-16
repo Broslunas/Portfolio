@@ -15,8 +15,8 @@ Si estas interesado entrar a la beta:
 + **Windows**: Haz click [AQUÍ](https://broslunas.com/projects/broslunas-desktop/) 
 
 Si estas interesado en ver el código fuente, visita su repositorio de **GITHUB**:
-+ **Android**: Haz click [AQUÍ](https://github.com/BrosLunas/broslunas-android) 
-+ **Windows**: Haz click [AQUÍ](https://github.com/BrosLunas/broslunas-desktop) 
++ **Android**: Haz click [AQUÍ](https://github.com/BrosLunas0/broslunas-android) 
++ **Windows**: Haz click [AQUÍ](https://github.com/BrosLunas0/broslunas-desktop) 
 
 
 > Escrito por **Broslunas**

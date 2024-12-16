@@ -8,7 +8,7 @@ tags:
 - Desktop
 - Android
 projectUrl: /projects/juegos-2d/03-tetris
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/03-tetris/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/03-tetris/
 wikisDemoUrl: https://games.broslunas.com//03-tetris/
 ---
 # Información

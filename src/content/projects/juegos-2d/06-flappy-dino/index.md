@@ -9,7 +9,7 @@ tags:
 - Desktop
 - Android
 demoUrl: https://games.broslunas.com//06-flappy-dino/
-repoUrl: https://github.com/BrosLunas/Web-Page/tree/main/06-flappy-dino/
+repoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/06-flappy-dino/
 wikiUrl: /wikis/juegos/2d/flappy-dino/
 ---
 

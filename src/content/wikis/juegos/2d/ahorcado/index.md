@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/14-ahorcado
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/14-ahorcado/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/14-ahorcado/
 wikisDemoUrl: https://games.broslunas.com//14-ahorcado/
 ---
 # Información

@@ -8,7 +8,7 @@ tags:
 - Juego 2D
 - Desktop
 demoUrl: https://mario.broslunas.com//
-repoUrl: https://github.com/BrosLunas/mario-broslunas
+repoUrl: https://github.com/BrosLunas0/mario-broslunas
 wikiUrl: /wikis/juegos/2d/mario/
 ---
 

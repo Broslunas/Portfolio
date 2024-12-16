@@ -9,7 +9,7 @@ tags:
 - Desktop
 - Android
 demoUrl: https://zelda.broslunas.com//
-repoUrl: https://github.com/BrosLunas/broslunas-zelda
+repoUrl: https://github.com/BrosLunas0/broslunas-zelda
 wikiUrl: /wikis/juegos/3d/zelda/
 ---
 

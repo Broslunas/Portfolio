@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/04-pacman
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/04-pacman/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/04-pacman/
 wikisDemoUrl: https://games.broslunas.com//04-pacman/
 ---
 # Información

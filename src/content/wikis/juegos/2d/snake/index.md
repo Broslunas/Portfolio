@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/01-snake
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/01-snake/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/01-snake/
 wikisDemoUrl: https://games.broslunas.com//01-snake/
 ---
 # Información

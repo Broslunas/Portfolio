@@ -8,7 +8,7 @@ tags:
 - Juego 2D
 - Desktop
 demoUrl: https://games.broslunas.com//01-snake/
-repoUrl: https://github.com/BrosLunas/Web-Page/tree/main/01-snake
+repoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/01-snake
 wikiUrl: /wikis/juegos/2d/snake/
 ---
 

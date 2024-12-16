@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/07-orbita
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/07-orbita/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/07-orbita/
 wikisDemoUrl: https://games.broslunas.com//07-orbita/
 ---
 # Información

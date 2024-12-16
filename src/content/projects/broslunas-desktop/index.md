@@ -5,7 +5,7 @@ date: "06 23 2024"
 draft: false
 tags:
 - Desktop
-repoUrl: https://github.com/BrosLunas/broslunas-desktop
+repoUrl: https://github.com/BrosLunas0/broslunas-desktop
 downloadUrl: /downloads/desktop/broslunas-v1.0.0.rar
 wikiUrl: /wikis/desktop/
 ---

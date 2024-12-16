@@ -9,7 +9,7 @@ tags:
 - Desktop
 - Android
 demoUrl: https://games.broslunas.com//03-tetris/
-repoUrl: https://github.com/BrosLunas/Web-Page/tree/main/03-tetris
+repoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/03-tetris
 wikiUrl: /wikis/juegos/2d/tetris/
 ---
 

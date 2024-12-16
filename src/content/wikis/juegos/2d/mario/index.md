@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/12-mario
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/12-mario/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/12-mario/
 wikisDemoUrl: https://games.broslunas.com//12-mario/
 ---
 # Información

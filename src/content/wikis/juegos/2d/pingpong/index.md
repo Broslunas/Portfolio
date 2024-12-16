@@ -7,7 +7,7 @@ tags:
 - Juego 2D
 - Desktop
 projectUrl: /projects/juegos-2d/05-pingpong
-wikisRepoUrl: https://github.com/BrosLunas/Web-Page/tree/main/05-pingpong/
+wikisRepoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/05-pingpong/
 wikisDemoUrl: https://games.broslunas.com//05-pingpong/
 ---
 # Información
