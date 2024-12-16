@@ -97,6 +97,10 @@ export const LINKS: Links = [
     HREF: "/wikis",
   },
   { 
+    TEXT: "AprendeJS",
+    HREF: "https://aprendejs.broslunas.com",
+  },
+  { 
     TEXT: "Modpacks", 
     HREF: "/modpack", 
     SUBLINKS: [

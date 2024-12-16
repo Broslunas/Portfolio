@@ -15,6 +15,10 @@ export const LINKS: Links = [
       HREF: "/wikis",
     },
     { 
+      TEXT: "Aprende JS",
+      HREF: "https://aprendejs.broslunas.com",
+    },
+    { 
       TEXT: "Modpacks", 
       HREF: "/modpack",
     },
