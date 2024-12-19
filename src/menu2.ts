@@ -15,6 +15,10 @@ export const LINKS: Links = [
       HREF: "/wikis",
     },
     { 
+      TEXT: "Videos",
+      HREF: "https://videos.broslunas.com",
+    },
+    { 
       TEXT: "Aprende JS",
       HREF: "https://aprendejs.broslunas.com",
     },
