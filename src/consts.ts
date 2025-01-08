@@ -114,20 +114,6 @@ export const LINKS: Links = [
   {
     TEXT: "Games",
     HREF: "https://games.broslunas.com/",
-    SUBLINKS: [
-      { TEXT: "Snake", HREF: "https://games.broslunas.com/01-snake" },
-      { TEXT: "Arkanoid", HREF: "https://games.broslunas.com/02-arkanoid-game" },
-      { TEXT: "Tetris", HREF: "https://games.broslunas.com/03-tetris" },
-      { TEXT: "Pacman", HREF: "https://games.broslunas.com/04-pacman" },
-      { TEXT: "Ping Pong", HREF: "https://games.broslunas.com/05-pingpong" },
-      { TEXT: "Orbita", HREF: "https://games.broslunas.com/07-orbita" },
-      { TEXT: "Copycat", HREF: "https://games.broslunas.com/09-copycat" },
-      { TEXT: "Buscaminas", HREF: "https://games.broslunas.com/10-buscaminas" },
-      { TEXT: "Tower Blocks", HREF: "https://games.broslunas.com/11-tower-blocks" },
-      { TEXT: "Simon", HREF: "https://games.broslunas.com/13-simon" },
-      { TEXT: "UNO", HREF: "https://uno.broslunas.com/" },
-      { TEXT: "Zelda", HREF: "https://zelda.broslunas.com/" },
-    ]
   },
   { 
     TEXT: "Linktree", 
