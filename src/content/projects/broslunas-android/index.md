@@ -12,9 +12,6 @@ wikiUrl: /wikis/android/
 # Que es Broslunas Android
 Broslunas desktop es una version portable de la pagina web para windows
 
-# Como usar la app
-Para aprender a como usar la app haz click en el botón de arriba que pone **Leer Wiki** o haz click [AQUÍ](/wiki/broslunas-android/)
-
 # Historial de versiones
 
 ### v1.0.2 (27/6/24)
