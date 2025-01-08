@@ -10,7 +10,6 @@ tags:
 - Android
 demoUrl: https://games.broslunas.com//11-towerblocks/
 repoUrl: https://github.com/BrosLunas0/Web-Page/tree/main/11-towerblocks/
-wikiUrl: /wikis/juegos/2d/towerblocks/
 ---
 
 ## Gameplay
