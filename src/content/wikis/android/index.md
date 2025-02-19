@@ -7,7 +7,7 @@ tags:
 - Android
 projectUrl: /projects/broslunas-android
 wikisRepoUrl: https://github.com/BrosLunas0/broslunas-android
-wikisDownloadUrl: /downloads/android/broslunas-v1.0.3.apk
+wikisDownloadUrl: https://cdn.broslunas.com/downloads/android/broslunas-v1.0.3.apk
 ---
 # Información
 En el estupendo dia de hoy he decidido crear una version apk de nuestro sitio web para dispositivos Android muy fácil de descargar y de usar
@@ -19,7 +19,7 @@ Para poder usar la version apk de <b>Broslunas Desktop</b>, es necesario tener u
 Puedes descargarlo haciendo click en el enlace que se encuentra a continuación
 
 <li><b>Mega:</b> <a target="_blank" href="https://mega.nz/folder/UxhGHYhZ">Haz Click Aquí</a> Contraseña: <b>Gb9rzml-yoiGa57LuZ_cIQ</b></li> 
-<li><b>Local:</b> <a href="/downloads/android/broslunas-v1.0.3.apk">Haz Click Aquí</a></li>
+<li><b>Local:</b> <a href="https://cdn.broslunas.com/downloads/android/broslunas-v1.0.3.apk">Haz Click Aquí</a></li>
 
 
 # Video

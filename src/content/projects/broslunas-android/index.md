@@ -6,7 +6,7 @@ draft: false
 tags:
 - Android
 repoUrl: https://github.com/BrosLunas0/broslunas-android
-downloadUrl: /downloads/android/broslunas-v1.0.3.apk
+downloadUrl: https://cdn.broslunas.com/downloads/android/broslunas-v1.0.3.apk
 wikiUrl: /wikis/android/
 ---
 # Que es Broslunas Android

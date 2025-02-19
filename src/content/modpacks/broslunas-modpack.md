@@ -7,7 +7,7 @@ tags:
 - "Broslunas Modpack"
 - "Modpack"
 - "1.20.1"
-modpacksDownloadUrl: /downloads/minecraft/modpack/Broslunas%20Modpack-1.0.zip
+modpacksDownloadUrl: https://cdn.broslunas.com/downloads/minecraft/modpack/Broslunas%20Modpack-1.0.zip
 ---
 ## Que es Broslunas Modpack
 Broslunas Modpack es un conjunto de mods seleccionados por Broslunas, para crear una experiencia vanilla+, con mas de 100+ mods.
@@ -29,6 +29,6 @@ Volviendo atrás, podrás observar todos los mods que contiene el modpack
 
 ## Descarga
 - Courseforge: [Descargar](#NoDisponible)
-- Local: [Descargar](/downloads/minecraft/modpack/Broslunas%20Modpack-1.0.zip)
+- Local: [Descargar](https://cdn.broslunas.com/downloads/minecraft/modpack/Broslunas%20Modpack-1.0.zip)
 
 > Escrito por **Broslunas**

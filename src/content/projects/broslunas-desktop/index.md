@@ -5,8 +5,8 @@ date: "06 23 2024"
 draft: false
 tags:
 - Desktop
-repoUrl: https://github.com/BrosLunas0/broslunas-desktop
-downloadUrl: /downloads/desktop/broslunas-v1.0.0.rar
+repoUrl: https://github.com/BrosLunas0/Desktop
+downloadUrl: https://cdn.broslunas.com/downloads/Broslunas%20Videos%20Setup%201.0.0.exe
 wikiUrl: /wikis/desktop/
 ---
 # Que es Broslunas Desktop
