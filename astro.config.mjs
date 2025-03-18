@@ -1,34 +1,44 @@
-import { defineConfig } from "astro/config"
-import mdx from "@astrojs/mdx"
-import sitemap from "@astrojs/sitemap"
-import tailwind from "@astrojs/tailwind"
-import solidJs from "@astrojs/solid-js"
-import partytown from '@astrojs/partytown'
+import { defineConfig } from 'astro/config';
 
+import tailwind from '@astrojs/tailwind';
+import compress from 'astro-compress';
+import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
 export default defineConfig({
-  site: "https://broslunas.com",
-  integrations: [mdx(), sitemap(), solidJs(), 
-    tailwind({ 
-      applyBaseStyles: false 
-    }), 
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-      },
-    }),
-  ],
-  redirects: {
-    '/projects/minecraft': '/projects',
-    '/projects/juegos': '/projects',
-    '/yt': '/youtube',
-    '/sn': '/social-network',
-    '/social-network': '/redes-sociales',
-    '/wiki': '/wikis',
-    '/wiki/[...slug]': '/wikis/[...slug]',
-    '/modpacks': '/modpack',
-    '/modpacks/[...slug]': '/modpack/[...slug]',
-    '/proyectos/[...slug]': '/projects/[...slug]',
-  }
-})
+    output: 'static',
+    trailingSlash: 'always',
+    site: 'https://devidev.io',
+
+    // Single page, no prefetch needed
+    prefetch: false,
+
+    integrations: [
+        tailwind(),
+        sitemap(),
+        compress({
+            CSS: true,
+            SVG: false,
+            Image: false,
+            HTML: {
+                "html-minifier-terser": {
+                    collapseWhitespace: true,
+                    // collapseInlineTagWhitespace: true, // It breaks display-inline / flex-inline text
+                    minifyCSS: true,
+                    minifyJS: true,
+                    removeComments: true,
+                    removeEmptyAttributes: true,
+                    // removeEmptyElements: true, // It removes sometimes SVGs
+                    removeRedundantAttributes: true
+                },
+            },
+            JavaScript: {
+                'terser': {
+                    compress: {
+                        drop_console: true,
+                        drop_debugger: true,
+                    }
+                }
+            }
+        })
+    ]
+});

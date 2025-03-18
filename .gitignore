@@ -3,7 +3,6 @@ dist/
 
 # generated types
 .astro/
-.vscode/
 
 # dependencies
 node_modules/
@@ -20,6 +19,10 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-/.vscode
-/.github
-/.vscode
+
+# jetbrains setting folder
+.idea/
+
+.wrangler/
+.vscode/
+package-lock.json
