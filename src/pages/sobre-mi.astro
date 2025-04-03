@@ -3,9 +3,10 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Ava from '@/assets/img/avatar.webp';
 import Prose from '../components/Prose.astro';
+import { SITE_TITLE, TITLE_ABOUT } from '../consts';
 ---
 
-<BaseLayout title='About Me' description='Lorem ipsum dolor sit amet'>
+<BaseLayout title={SITE_TITLE + ' | ' + TITLE_ABOUT} description='Información sobre mí.'>
 	<div class='container'>
 		<main class='prose text-lg dark:prose-invert'>
 			<article>
