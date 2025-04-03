@@ -19,7 +19,7 @@ export const projects: Project[] = [
 		demoLink: 'https://stats.broslunas.com',
 		postLink: '/spotify-stats',
 		tags: ['Astro', 'Javascript'],
-		cover: '/src/assets/img/posts/spotify-stats.webp'
+		cover: 'https://cdn.broslunas.com/projects/spotify-stats.webp'
 	},
 	{
 		...(await getRepositoryDetails('broslunas/games')),
