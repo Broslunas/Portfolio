@@ -1,0 +1,22 @@
+---
+import { SITE_TITLE, TITLE_CONTACT, SITE_DESCRIPTION } from '@/consts';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title={SITE_TITLE + ' | ' + TITLE_CONTACT} description={SITE_DESCRIPTION}>
+	<div class='container text-center'>
+		<div class='p-4'>
+			<h1 class='text-5xl font-bold my-4'>¡Gracias por contactarnos!</h1>
+			<p class='text-xl'>
+				Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible. <br />
+				Si deseas enviar otro formulario o volver al inicio, utiliza los botones a continuación.
+			</p>
+			<br />
+			<div class='mt-6'>
+				<a href='/' class='inline-block bg-yellow-700 text-white py-3 px-6 rounded-lg hover:bg-yellow-800 transition duration-300 mt-4'>
+					Volver al inicio
+				</a>
+			</div>
+		</div>
+	</div>
+</BaseLayout>
