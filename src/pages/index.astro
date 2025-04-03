@@ -1,11 +1,11 @@
 ---
 import { SITE_TITLE, TITLE_HOME, SITE_DESCRIPTION } from '../consts';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import Ava from '@/assets/img/avatar.webp';
-import Prose from '../components/Prose.astro';
-import { projects } from './proyectos/projects';
-import ProjectList from '../components/ProjectList.astro';
+import Prose from '@/components/Prose.astro';
+import { projects } from '@/pages/proyectos/projects';
+import ProjectList from '@/components/ProjectList.astro';
 
 const top6Projects = projects.slice(0, 6);
 ---
@@ -14,14 +14,14 @@ const top6Projects = projects.slice(0, 6);
 	<div class='container'>
 		<div class='w-full md:flex md:items-center gap-16 mb-10'>
 			<div class='text-pretty leading-9'>
-				<h1 class='text-4xl font-bold mb-4'>Broslunas Dev</h1>
+				<h1 class='text-4xl font-bold mb-4'><strong>Broslunas Dev</strong></h1>
 				<p class='text-xl mb-4'>Apasionado de la tecnología y la buena música</p>
 				<Prose>
 					<div class='text-lg'>
 						<p>
-							Soy un desarrollador Front-End de Canarias, España, especializado en
-							<span class='font-bold'>HTML, CSS, JavaScript, Astro y Node.js</span>. Aunque aún no tengo un empleo formal, he creado varios
-							proyectos que demuestran mi pasión y mi capacidad para aprender y evolucionar día a día.
+							Soy un desarrollador <strong>Front-End</strong> de Canarias, España, especializado en
+							<strong>HTML, CSS, JavaScript, Astro y Node.js</strong>. Aunque aún no tengo un empleo formal, he creado varios proyectos que
+							demuestran mi pasión y mi capacidad para aprender y evolucionar día a día.
 						</p>
 						<p>
 							Actualmente, me encuentro realizando un curso intensivo de JavaScript para perfeccionar mis habilidades y ampliar mis
@@ -44,3 +44,10 @@ const top6Projects = projects.slice(0, 6);
 		</main>
 	</div>
 </BaseLayout>
+
+<style>
+	strong {
+		font-weight: 700;
+		color: #ffc370;
+	}
+</style>
