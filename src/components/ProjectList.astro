@@ -8,10 +8,10 @@ import GithubBlack from '@/assets/img/github-mark.svg';
 const { projects } = Astro.props;
 ---
 
-<div class='grid grid-cols-12 gap-5'>
+<div class='grid grid-cols-8 gap-5'>
 	{
 		projects.map((project: Project) => (
-			<div class='col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-sm p-5'>
+			<div class='col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-sm p-5 transition-all duration-300 hover:border-yellow-500 hover:scale-105'>
 				<div class='flex justify-between items-center'>
 					<div class='flex gap-2'>
 						{(project.tags || [])?.map((tag: string) => (
@@ -43,7 +43,8 @@ const { projects } = Astro.props;
 						</div>
 					)}
 				</div>
-				<h3 class='font-semibold my-2'>
+
+				<h3 class='font-semibold my-4 text-xl'>
 					<a class='underline' href={project.demoLink} target='_blank' rel={project.demoLinkRel}>
 						{project.name}
 					</a>
@@ -51,14 +52,27 @@ const { projects } = Astro.props;
 				<div class='line-clamp-2 text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px]'>
 					<p>{project.description}</p>
 				</div>
+				{project.cover && (
+					<a class='underline flex items-center gap-2' href={project.demoLink} target='_blank' rel={project.demoLinkRel}>
+						<div class='mb-4'>
+							<img src={project.cover} alt={project.name} class='rounded-lg' />
+						</div>
+					</a>
+				)}
 				<div class='flex justify-end gap-3'>
 					{project.postLink && (
-						<a class='underline flex items-center gap-2' href={project.postLink}>
+						<a
+							class='underline flex items-center gap-2 px-4 py-2 bg-yellow-600 text-white rounded-lg transition-all duration-300 hover:bg-yellow-700'
+							href={project.postLink}>
 							Leer más
 						</a>
 					)}
-					{project.demoLink && ( // This line adds the conditional check for the Demo link
-						<a class='underline flex items-center gap-2' href={project.demoLink} target='_blank' rel={project.demoLinkRel}>
+					{project.demoLink && (
+						<a
+							class='underline flex items-center gap-2 px-4 py-2 bg-yellow-600 text-white rounded-lg transition-all duration-300 hover:bg-yellow-700'
+							href={project.demoLink}
+							target='_blank'
+							rel={project.demoLinkRel}>
 							Demo
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
