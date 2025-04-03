@@ -10,3 +10,4 @@ export const TITLE_CONTACT = 'Contacto';
 export const TITLE_ABOUT = 'Sobre mí';
 export const TITLE_PROJECTS = 'Proyectos';
 export const TITLE_POSTS = 'Publicaciones';
+export const TITLE_NEWSLETTER = 'Newsletter';

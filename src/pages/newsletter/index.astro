@@ -1,0 +1,20 @@
+---
+import { SITE_TITLE, TITLE_NEWSLETTER } from '@/consts';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title={SITE_TITLE + ' | ' + TITLE_NEWSLETTER}>
+	<div class='container'>
+		<main>
+			<iframe
+				data-w-type='embedded'
+				src='https://sugik.mjt.lu/wgt/sugik/x5sx/form?c=88977e24'
+				width='100%'
+				style='height: 0; border-radius: 8px;'
+			>
+			</iframe>
+
+			<script is:inline type='text/javascript' src='https://app.mailjet.com/pas-nc-embedded-v1.js'></script>
+		</main>
+	</div>
+</BaseLayout>
