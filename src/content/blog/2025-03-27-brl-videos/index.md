@@ -4,7 +4,7 @@ slug: 'videos'
 description: 'Un sitio web para poder ver tus peliculas y series favoritas totalmente gratis y sin publicidad.'
 pubDate: 'Mar 27 2025'
 tags: ['Astro', 'Markdown']
-coverImage: './cover.png'
+coverImage: '/src/assets/img/posts/brl-videos.webp'
 ---
 
 ## Introducción
