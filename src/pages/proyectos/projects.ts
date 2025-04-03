@@ -8,7 +8,7 @@ export interface Project {
 	postLink?: string;
 	demoLinkRel?: string;
 	[key: string]: any;
-	cover?: string;
+	cover: string;
 }
 
 export const projects: Project[] = [
@@ -28,7 +28,7 @@ export const projects: Project[] = [
 		demoLink: 'https://games.broslunas.com',
 		postLink: '/games',
 		tags: ['Astro', 'Javascript', 'HTML', 'CSS'],
-		cover: '/src/assets/img/posts/games.webp'
+		cover: 'https://cdn.broslunas.com/projects/games.webp'
 	},
 	{
 		...(await getRepositoryDetails('broslunas/clock')),
@@ -37,7 +37,7 @@ export const projects: Project[] = [
 		demoLink: 'https://clock.broslunas.com',
 		postLink: '/clock',
 		tags: ['HTML', 'CSS', 'Javascript'],
-		cover: '/src/assets/img/posts/clock.webp'
+		cover: 'https://cdn.broslunas.com/projects/clock.webp'
 	},
 	{
 		...(await getRepositoryDetails('broslunas/Calculator')),
@@ -46,7 +46,7 @@ export const projects: Project[] = [
 		demoLink: 'https://calc.broslunas.com',
 		postLink: '/calc',
 		tags: ['HTML', 'CSS', 'Javascript'],
-		cover: '/src/assets/img/posts/calc.webp'
+		cover: 'https://cdn.broslunas.com/projects/calc.webp'
 	},
 	{
 		name: 'Videos',
@@ -54,7 +54,7 @@ export const projects: Project[] = [
 		demoLink: 'https://videos.broslunas.com',
 		postLink: '/videos',
 		tags: ['Astro', 'Markdown', 'Typescript'],
-		cover: '/src/assets/img/posts/brl-videos.webp'
+		cover: 'https://cdn.broslunas.com/projects/brl-videos.webp'
 	},
 	{
 		...(await getRepositoryDetails('broslunas/portfolio')),
@@ -62,6 +62,6 @@ export const projects: Project[] = [
 		description: 'Mi portfolio personal donde presento mis proyectos, habilidades y experiencia profesional.',
 		demoLink: 'https://broslunas.com',
 		tags: ['Astro', 'Typescript'],
-		cover: '/src/assets/img/posts/portfolio.webp'
+		cover: 'https://cdn.broslunas.com/projects/portfolio.webp'
 	}
 ];
