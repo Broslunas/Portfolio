@@ -13,13 +13,13 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
-		...(await getRepositoryDetails('broslunas/spotify-stats')),
-		name: 'Spotify Stats',
-		description: 'Un sitio web para visualizar estadísticas personalizadas de Spotify, como tus canciones y artistas más escuchados.',
-		demoLink: 'https://stats.broslunas.com',
-		postLink: '/spotify-stats',
-		tags: ['Astro', 'Javascript'],
-		cover: 'https://cdn.broslunas.com/projects/spotify-stats.webp'
+		...(await getRepositoryDetails('broslunas/Chat')),
+		name: 'Chat IA',
+		description: 'Aplicación web de chat impulsada por IA, diseñada para interactuar con los usuarios de manera natural y fluida.',
+		demoLink: 'https://chat.broslunas.com',
+		postLink: '/chat',
+		tags: ['Astro', 'Javascript', 'IA'],
+		cover: 'https://cdn.broslunas.com/projects/chat.webp'
 	},
 	{
 		...(await getRepositoryDetails('broslunas/games')),
