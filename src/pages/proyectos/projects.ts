@@ -13,7 +13,7 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
-		...(await getRepositoryDetails('broslunas/Chat')),
+		...(await getRepositoryDetails('broslunas/chat-ai')),
 		name: 'Chat IA',
 		description: 'Aplicación web de chat impulsada por IA, diseñada para interactuar con los usuarios de manera natural y fluida.',
 		demoLink: 'https://chat.broslunas.com',
