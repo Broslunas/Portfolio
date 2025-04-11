@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import type { Project } from '../pages/proyectos/projects';
-import { kFormatter } from '../utils';
+import type { Project } from '@/pages/proyectos/projects';
+import { kFormatter } from '@/utils';
 import GithubWhite from '@/assets/img/github-mark-white.svg';
 import GithubBlack from '@/assets/img/github-mark.svg';
 
@@ -62,14 +62,14 @@ const { projects } = Astro.props;
 				<div class='flex justify-end gap-3'>
 					{project.postLink && (
 						<a
-							class='underline flex items-center gap-2 px-4 py-2 bg-yellow-600 text-white rounded-lg transition-all duration-300 hover:bg-yellow-700'
+							class='flex items-center gap-2 px-4 py-2 bg-yellow-600 text-white rounded-lg transition-all duration-300 hover:bg-yellow-700 no-underline'
 							href={project.postLink}>
 							Leer más
 						</a>
 					)}
 					{project.demoLink && (
 						<a
-							class='underline flex items-center gap-2 px-4 py-2 bg-yellow-600 text-white rounded-lg transition-all duration-300 hover:bg-yellow-700'
+							class='flex items-center gap-2 px-4 py-2 bg-yellow-600 text-white rounded-lg transition-all duration-300 hover:bg-yellow-700 no-underline'
 							href={project.demoLink}
 							target='_blank'
 							rel={project.demoLinkRel}>
