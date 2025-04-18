@@ -3,7 +3,7 @@ title: 'Proyecto: Broslunas Videos'
 slug: 'videos'
 description: 'Un sitio web para poder ver tus peliculas y series favoritas totalmente gratis y sin publicidad.'
 pubDate: 'Mar 27 2025'
-tags: ['Astro', 'Markdown']
+tags: ['Astro', 'Markdown', 'Typescript']
 coverImage: '/src/assets/img/posts/brl-videos.webp'
 ---
 

@@ -3,7 +3,7 @@ title: 'Proyecto: Chat IA'
 slug: 'chat'
 description: 'Un chat interactivo con IA para los fans de Minecraft.'
 pubDate: 'Apr 11 2025'
-tags: ['ASTRO', 'MONGODB', 'API', 'MINECRAFT', 'IA']
+tags: ['Astro', 'React', 'Javascript', 'Typescript', 'IA', 'API', 'MongoDB']
 coverImage: '/src/assets/img/posts/chat.webp'
 ---
 
