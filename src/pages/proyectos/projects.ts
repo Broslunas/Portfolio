@@ -18,8 +18,17 @@ export const projects: Project[] = [
 		description: 'Aplicación web de chat impulsada por IA, diseñada para interactuar con los usuarios de manera natural y fluida.',
 		demoLink: 'https://chat.broslunas.com',
 		postLink: '/chat',
-		tags: ['Astro', 'Javascript', 'IA'],
+		tags: ['Astro', 'Javascript', 'Typescript', 'IA', 'API', 'MongoDB'],
 		cover: 'https://cdn.broslunas.com/projects/chat.webp'
+	},
+	{
+		...(await getRepositoryDetails('broslunas/todo-app')),
+		name: 'ToDo App',
+		description: 'Aplicación web de gestión de tareas que permite a los usuarios crear, editar y eliminar tareas fácilmente.',
+		demoLink: 'https://todo.broslunas.com',
+		postLink: '/todo',
+		tags: ['Astro', 'Typescript', 'API', 'MongoDB'],
+		cover: 'https://cdn.broslunas.com/projects/todo.webp'
 	},
 	{
 		...(await getRepositoryDetails('broslunas/games')),
