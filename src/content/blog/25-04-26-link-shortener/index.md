@@ -3,7 +3,7 @@ title: 'Proyecto: Link Shortener'
 slug: 'link-shortener'
 description: 'Un acortador de enlaces sencillo y efectivo para compartir URLs de manera más amigable.'
 pubDate: 'May 26 2025'
-tags: ['Astro', 'Typescript', 'API', 'MongoDB']
+tags: ['Astro', 'Javascript', 'Typescript', 'API', 'MongoDB']
 coverImage: '/src/assets/img/posts/link-shortener.webp'
 ---
 
