@@ -13,6 +13,14 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
+		name: 'Link Shortener',
+		description: 'Acorta tus enlaces de forma rápida y sencilla con esta herramienta de acortamiento de enlaces.',
+		demoLink: 'https://l.broslunas.com',
+		postLink: '/link-shortener',
+		tags: ['Astro', 'Javascript', 'Typescript', 'API', 'MongoDB'],
+		cover: 'https://cdn.broslunas.com/projects/link-shortener.webp'
+	},
+	{
 		...(await getRepositoryDetails('broslunas/chat-ai')),
 		name: 'Chat IA',
 		description: 'Aplicación web de chat impulsada por IA, diseñada para interactuar con los usuarios de manera natural y fluida.',
