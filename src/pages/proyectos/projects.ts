@@ -30,15 +30,6 @@ export const projects: Project[] = [
 		cover: 'https://cdn.broslunas.com/projects/chat.webp'
 	},
 	{
-		...(await getRepositoryDetails('broslunas/todo-app')),
-		name: 'To-Do App',
-		description: 'Aplicación web de gestión de tareas que permite a los usuarios crear, editar y eliminar tareas fácilmente.',
-		demoLink: 'https://todo.broslunas.com',
-		postLink: '/todo',
-		tags: ['Astro', 'Typescript', 'API', 'MongoDB'],
-		cover: 'https://cdn.broslunas.com/projects/todo.webp'
-	},
-	{
 		...(await getRepositoryDetails('broslunas/games')),
 		name: 'Games',
 		description: 'Una colección de juegos interactivos desarrollados para la web.',
