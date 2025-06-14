@@ -3,7 +3,7 @@ title: 'Proyecto: Spotify Stats'
 slug: 'spotify-stats'
 description: 'Un proyecto para mostrar estadísticas de Spotify'
 pubDate: 'Jun 14 2025'
-tags: ['Astro', 'JavaScript', 'Spotify']
+tags: ['Astro', 'JavaScript', 'Spotify', 'APIs', 'NodeJS']
 coverImage: '/src/assets/img/posts/spotify-stats.webp'
 ---
 
