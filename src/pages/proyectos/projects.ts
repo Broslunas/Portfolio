@@ -30,11 +30,11 @@ export const projects: Project[] = [
 		cover: 'https://cdn.broslunas.com/projects/chat.webp'
 	},
 	{
-		...(await getRepositoryDetails('Broslunas/Spotify-Stats')),
+		...(await getRepositoryDetails('broslunas/Spotify-Stats')),
 		name: 'Spotify Stats',
 		description: 'Plataforma web para ver tus estadísticas de spotify.',
 		demoLink: 'https://stats.broslunas.com',
-		postLink: '/stats',
+		postLink: '/spotify-stats',
 		tags: ['Astro', 'APIs', 'NodeJS', 'Typescript'],
 		cover: 'https://cdn.broslunas.com/projects/stats.webp'
 	},
