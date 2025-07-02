@@ -18,6 +18,8 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 				action='https://formsubmit.co/pablo@broslunas.com'
 				method='POST'
 			>
+				<div id='error-message' class='text-red-500 text-xl hidden text-center'></div>
+
 				<div class='flex flex-col'>
 					<label class='text-gray-300 font-medium' for='name'>Nombre:</label>
 					<input
@@ -80,6 +82,30 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 						>Enviar</button
 					>
 				</div>
+
+				<script>
+					const form = document.querySelector('.contact-form');
+					const nameInput = document.querySelector('#name');
+					const errorMessage = document.querySelector('#error-message');
+
+					const spamNames = ['robertarice', 'peep', 'eric jones', 'duanestame'];
+
+					if (form && nameInput && errorMessage) {
+						form.addEventListener('submit', (e) => {
+							const inputValue = (nameInput as HTMLInputElement).value.toLowerCase().trim();
+							if (spamNames.some((name) => inputValue === name.toLowerCase())) {
+								e.preventDefault();
+								errorMessage.textContent = 'Este nombre no está permitido.';
+								errorMessage.classList.remove('hidden');
+								// Scroll hasta el mensaje de error y focus en el campo nombre
+								errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+								(nameInput as HTMLInputElement).focus();
+							} else {
+								errorMessage.classList.add('hidden');
+							}
+						});
+					}
+				</script>
 			</form>
 		</main>
 	</div>
